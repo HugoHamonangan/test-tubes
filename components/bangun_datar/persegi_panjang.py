@@ -1,6 +1,12 @@
 import streamlit as st
 from custom_module.custom import *
 
+import codecs
+
+# Components Pkgs
+import streamlit.components.v1 as components
+from custom_module.custom import *
+
 def blueprint(param, param2):
   
   global panjang_persegi_panjang

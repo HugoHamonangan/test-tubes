@@ -1,4 +1,10 @@
 import streamlit as st
+import turtle
+# Utils Pkgs
+import codecs
+
+# Components Pkgs
+import streamlit.components.v1 as components
 from custom_module.custom import *
 
 
@@ -18,6 +24,14 @@ def luas_persegi():
 
         resultbangundatar("Luas", "Persegi", result_luas)
 
+     
+
+        # Custom Components Fxn
+        f=codecs.open("./components/htmlFiles/luas-persegi.html", 'r')
+        page = f.read().format(luas = luas_persegi+100)
+        components.html(page,width=300,height=300,scrolling=False)
+        
+
 
 def keliling_persegi():
     st.subheader("Mencari Keliling")
@@ -28,11 +42,16 @@ def keliling_persegi():
 
     if btn_keliling:
 
-        result_keliling = keliling_persegi * 4
+        result_keliling = 4*keliling_persegi 
 
         rumusbangundatar("Keliling", "Persegi", "S x 4")
 
         resultbangundatar("Keliling", "Persegi", result_keliling)
+
+         # Custom Components Fxn
+        f=codecs.open("./components/htmlFiles/keliling-persegi.html", 'r')
+        page = f.read().format(keliling = keliling_persegi)
+        components.html(page,width=300,height=300,scrolling=False)
 
 
 def persegi():
