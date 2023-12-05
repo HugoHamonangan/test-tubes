@@ -719,60 +719,6 @@
     {
         "label": "st_calculator",
         "kind": 2,
-        "importPath": "pages.calculator",
-        "description": "pages.calculator",
-        "peekOfCode": "def st_calculator(calc_html,width=700,height=700):\n\tcalc_file = codecs.open(calc_html,'r')\n\tpage = calc_file.read()\n\tcomponents.html(page,width=width,height=height,scrolling=False)\ndef main():\n\t\"\"\"A Calculator App with Streamlit Components\"\"\"\n\tmenu = [\"Calculator\"]\n\tchoice = st.sidebar.selectbox(\"Menu\",menu)\n\tif choice == \"Calculator\":\n\t\tst.subheader(\"Calculator\")",
-        "detail": "pages.calculator",
-        "documentation": {}
-    },
-    {
-        "label": "main",
-        "kind": 2,
-        "importPath": "pages.calculator",
-        "description": "pages.calculator",
-        "peekOfCode": "def main():\n\t\"\"\"A Calculator App with Streamlit Components\"\"\"\n\tmenu = [\"Calculator\"]\n\tchoice = st.sidebar.selectbox(\"Menu\",menu)\n\tif choice == \"Calculator\":\n\t\tst.subheader(\"Calculator\")\n\t\t# components.html(html_temp)\n\t\tst_calculator('./components/calculator/calculator.html')\nif __name__ == '__main__':\n\tmain()",
-        "detail": "pages.calculator",
-        "documentation": {}
-    },
-    {
-        "label": "\tcalc_file",
-        "kind": 5,
-        "importPath": "pages.calculator",
-        "description": "pages.calculator",
-        "peekOfCode": "\tcalc_file = codecs.open(calc_html,'r')\n\tpage = calc_file.read()\n\tcomponents.html(page,width=width,height=height,scrolling=False)\ndef main():\n\t\"\"\"A Calculator App with Streamlit Components\"\"\"\n\tmenu = [\"Calculator\"]\n\tchoice = st.sidebar.selectbox(\"Menu\",menu)\n\tif choice == \"Calculator\":\n\t\tst.subheader(\"Calculator\")\n\t\t# components.html(html_temp)",
-        "detail": "pages.calculator",
-        "documentation": {}
-    },
-    {
-        "label": "\tpage",
-        "kind": 5,
-        "importPath": "pages.calculator",
-        "description": "pages.calculator",
-        "peekOfCode": "\tpage = calc_file.read()\n\tcomponents.html(page,width=width,height=height,scrolling=False)\ndef main():\n\t\"\"\"A Calculator App with Streamlit Components\"\"\"\n\tmenu = [\"Calculator\"]\n\tchoice = st.sidebar.selectbox(\"Menu\",menu)\n\tif choice == \"Calculator\":\n\t\tst.subheader(\"Calculator\")\n\t\t# components.html(html_temp)\n\t\tst_calculator('./components/calculator/calculator.html')",
-        "detail": "pages.calculator",
-        "documentation": {}
-    },
-    {
-        "label": "\tmenu",
-        "kind": 5,
-        "importPath": "pages.calculator",
-        "description": "pages.calculator",
-        "peekOfCode": "\tmenu = [\"Calculator\"]\n\tchoice = st.sidebar.selectbox(\"Menu\",menu)\n\tif choice == \"Calculator\":\n\t\tst.subheader(\"Calculator\")\n\t\t# components.html(html_temp)\n\t\tst_calculator('./components/calculator/calculator.html')\nif __name__ == '__main__':\n\tmain()",
-        "detail": "pages.calculator",
-        "documentation": {}
-    },
-    {
-        "label": "\tchoice",
-        "kind": 5,
-        "importPath": "pages.calculator",
-        "description": "pages.calculator",
-        "peekOfCode": "\tchoice = st.sidebar.selectbox(\"Menu\",menu)\n\tif choice == \"Calculator\":\n\t\tst.subheader(\"Calculator\")\n\t\t# components.html(html_temp)\n\t\tst_calculator('./components/calculator/calculator.html')\nif __name__ == '__main__':\n\tmain()",
-        "detail": "pages.calculator",
-        "documentation": {}
-    },
-    {
-        "label": "st_calculator",
-        "kind": 2,
         "importPath": "pages.Kalkulator",
         "description": "pages.Kalkulator",
         "peekOfCode": "def st_calculator(calc_html,width=700,height=700):\n\tcalc_file = codecs.open(calc_html,'r')\n\tpage = calc_file.read()\n\tcomponents.html(page,width=width,height=height,scrolling=False)\ndef main():\n\t\"\"\"A Calculator App with Streamlit Components\"\"\"\n\tmenu = [\"kalculator\"]\n\tchoice = st.sidebar.selectbox(\"Menu\",menu)\n\tif choice == \"kalculator\":\n\t\tst.subheader(\"Kalculator\")",
@@ -879,6 +825,15 @@
         "documentation": {}
     },
     {
+        "label": "link",
+        "kind": 5,
+        "importPath": "pages.Youtube-downloader",
+        "description": "pages.Youtube-downloader",
+        "peekOfCode": "link = \"./components/youtube_downloader/\"\nst.image(f'{link}yt.png', use_column_width=True)\nst.header(\"APLIKASI DOWNLOAD VIDEO DAN AUDIO YOUTUBE\")\nvideo_url = st.text_input(\"Masukkan Link Video Youtube yang anda salin\")\ngenre = st.radio(\n\"Pilih Format of Video\",\n('360 P', '720 P', '1080 P', 'audio/mp4 (128 kbps)', 'audio/webm (50 kbps)', 'audio/webm (70 kbps)', 'audio/webm (160 kbps)'))\nif video_url:\n    video = YouTube(video_url)\n    st.image(video.thumbnail_url, width=300)",
+        "detail": "pages.Youtube-downloader",
+        "documentation": {}
+    },
+    {
         "label": "video_url",
         "kind": 5,
         "importPath": "pages.Youtube-downloader",
@@ -894,6 +849,60 @@
         "description": "pages.Youtube-downloader",
         "peekOfCode": "genre = st.radio(\n\"Pilih Format of Video\",\n('360 P', '720 P', '1080 P', 'audio/mp4 (128 kbps)', 'audio/webm (50 kbps)', 'audio/webm (70 kbps)', 'audio/webm (160 kbps)'))\nif video_url:\n    video = YouTube(video_url)\n    st.image(video.thumbnail_url, width=300)\n    st.subheader('''\n    {}\n    ## Length: {} seconds\n    ## Rating: {} ",
         "detail": "pages.Youtube-downloader",
+        "documentation": {}
+    },
+    {
+        "label": "st_calculator",
+        "kind": 2,
+        "importPath": "pages.calculator",
+        "description": "pages.calculator",
+        "peekOfCode": "def st_calculator(calc_html,width=700,height=700):\n\tcalc_file = codecs.open(calc_html,'r')\n\tpage = calc_file.read()\n\tcomponents.html(page,width=width,height=height,scrolling=False)\ndef main():\n\t\"\"\"A Calculator App with Streamlit Components\"\"\"\n\tmenu = [\"Calculator\"]\n\tchoice = st.sidebar.selectbox(\"Menu\",menu)\n\tif choice == \"Calculator\":\n\t\tst.subheader(\"Calculator\")",
+        "detail": "pages.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "pages.calculator",
+        "description": "pages.calculator",
+        "peekOfCode": "def main():\n\t\"\"\"A Calculator App with Streamlit Components\"\"\"\n\tmenu = [\"Calculator\"]\n\tchoice = st.sidebar.selectbox(\"Menu\",menu)\n\tif choice == \"Calculator\":\n\t\tst.subheader(\"Calculator\")\n\t\t# components.html(html_temp)\n\t\tst_calculator('./components/calculator/calculator.html')\nif __name__ == '__main__':\n\tmain()",
+        "detail": "pages.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "\tcalc_file",
+        "kind": 5,
+        "importPath": "pages.calculator",
+        "description": "pages.calculator",
+        "peekOfCode": "\tcalc_file = codecs.open(calc_html,'r')\n\tpage = calc_file.read()\n\tcomponents.html(page,width=width,height=height,scrolling=False)\ndef main():\n\t\"\"\"A Calculator App with Streamlit Components\"\"\"\n\tmenu = [\"Calculator\"]\n\tchoice = st.sidebar.selectbox(\"Menu\",menu)\n\tif choice == \"Calculator\":\n\t\tst.subheader(\"Calculator\")\n\t\t# components.html(html_temp)",
+        "detail": "pages.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "\tpage",
+        "kind": 5,
+        "importPath": "pages.calculator",
+        "description": "pages.calculator",
+        "peekOfCode": "\tpage = calc_file.read()\n\tcomponents.html(page,width=width,height=height,scrolling=False)\ndef main():\n\t\"\"\"A Calculator App with Streamlit Components\"\"\"\n\tmenu = [\"Calculator\"]\n\tchoice = st.sidebar.selectbox(\"Menu\",menu)\n\tif choice == \"Calculator\":\n\t\tst.subheader(\"Calculator\")\n\t\t# components.html(html_temp)\n\t\tst_calculator('./components/calculator/calculator.html')",
+        "detail": "pages.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "\tmenu",
+        "kind": 5,
+        "importPath": "pages.calculator",
+        "description": "pages.calculator",
+        "peekOfCode": "\tmenu = [\"Calculator\"]\n\tchoice = st.sidebar.selectbox(\"Menu\",menu)\n\tif choice == \"Calculator\":\n\t\tst.subheader(\"Calculator\")\n\t\t# components.html(html_temp)\n\t\tst_calculator('./components/calculator/calculator.html')\nif __name__ == '__main__':\n\tmain()",
+        "detail": "pages.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "\tchoice",
+        "kind": 5,
+        "importPath": "pages.calculator",
+        "description": "pages.calculator",
+        "peekOfCode": "\tchoice = st.sidebar.selectbox(\"Menu\",menu)\n\tif choice == \"Calculator\":\n\t\tst.subheader(\"Calculator\")\n\t\t# components.html(html_temp)\n\t\tst_calculator('./components/calculator/calculator.html')\nif __name__ == '__main__':\n\tmain()",
+        "detail": "pages.calculator",
         "documentation": {}
     }
 ]
