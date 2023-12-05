@@ -49,9 +49,9 @@ def keliling_persegi():
         resultbangundatar("Keliling", "Persegi", result_keliling)
 
          # Custom Components Fxn
-        f=codecs.open("./components/htmlFiles/keliling-persegi.html", 'r')
-        page = f.read().format(keliling = keliling_persegi)
-        components.html(page,width=300,height=300,scrolling=False)
+        # f=codecs.open("./components/htmlFiles/keliling-persegi.html", 'r')
+        # page = f.read().format(keliling = keliling_persegi)
+        # components.html(page,width=300,height=300,scrolling=False)
 
 
 def persegi():
