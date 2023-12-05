@@ -121,23 +121,6 @@
         "documentation": {}
     },
     {
-        "label": "*",
-        "importPath": "custom_module.custom",
-        "description": "custom_module.custom",
-        "isExtraImport": true,
-        "detail": "custom_module.custom",
-        "documentation": {}
-    },
-    {
-        "label": "turtle",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "turtle",
-        "description": "turtle",
-        "detail": "turtle",
-        "documentation": {}
-    },
-    {
         "label": "codecs",
         "kind": 6,
         "isExtraImport": true,
@@ -316,7 +299,7 @@
         "kind": 2,
         "importPath": "components.bangun_datar.persegi",
         "description": "components.bangun_datar.persegi",
-        "peekOfCode": "def keliling_persegi():\n    st.subheader(\"Mencari Keliling\")\n    keliling_persegi = st.number_input(\"Masukkan Sisi : \")\n    btn_keliling = btnhasil(2)\n    if btn_keliling:\n        result_keliling = 4*keliling_persegi \n        rumusbangundatar(\"Keliling\", \"Persegi\", \"S x 4\")\n        resultbangundatar(\"Keliling\", \"Persegi\", result_keliling)\n        #  # Custom Components Fxn\n        # f=codecs.open(\"./components/htmlFiles/keliling-persegi.html\", 'r')",
+        "peekOfCode": "def keliling_persegi():\n    st.subheader(\"Mencari Keliling\")\n    keliling_persegi = st.number_input(\"Masukkan Sisi : \")\n    btn_keliling = btnhasil(2)\n    if btn_keliling:\n        result_keliling = 4*keliling_persegi \n        rumusbangundatar(\"Keliling\", \"Persegi\", \"S x 4\")\n        resultbangundatar(\"Keliling\", \"Persegi\", result_keliling)\n         # Custom Components Fxn\n        f=codecs.open(\"./components/htmlFiles/keliling-persegi.html\", 'r')",
         "detail": "components.bangun_datar.persegi",
         "documentation": {}
     },
